@@ -3,6 +3,7 @@ import Hero from './components/Hero.jsx'
 import Methods from './components/Methods.jsx'
 import Recipes from './components/Recipes.jsx'
 import Tips from './components/Tips.jsx'
+import MoreRecipes from './components/MoreRecipes.jsx'
 import About from './components/About.jsx'
 import Footer from './components/Footer.jsx'
 
@@ -15,6 +16,7 @@ export default function App() {
         <Methods />
         <Recipes />
         <Tips />
+        <MoreRecipes />
         <About />
       </main>
       <Footer />

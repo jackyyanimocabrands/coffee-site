@@ -5,17 +5,18 @@ export default function Navbar() {
         <a href="#top" className="font-display text-2xl font-bold tracking-tight">
           Ember<span className="text-amber-400">&</span>Brew
         </a>
-        <ul className="hidden md:flex items-center gap-8 text-sm font-medium text-cream/80">
+        <ul className="hidden lg:flex items-center gap-7 text-sm font-medium text-cream/80">
           <li><a href="#methods" className="hover:text-amber-400 transition">Methods</a></li>
           <li><a href="#recipes" className="hover:text-amber-400 transition">Recipes</a></li>
           <li><a href="#tips" className="hover:text-amber-400 transition">Tips</a></li>
+          <li><a href="#more-recipes" className="hover:text-amber-400 transition">Library</a></li>
           <li><a href="#about" className="hover:text-amber-400 transition">About</a></li>
         </ul>
         <a
-          href="#recipes"
+          href="#more-recipes"
           className="hidden md:inline-block px-5 py-2.5 bg-amber-500 hover:bg-amber-400 text-ink font-semibold rounded-full text-sm transition"
         >
-          Start Brewing
+          Browse All
         </a>
       </nav>
     </header>
