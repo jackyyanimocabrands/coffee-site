@@ -48,11 +48,56 @@ const recipes = [
       'Swirl gently. Serve immediately over fresh ice.',
     ],
   },
+  {
+    title: 'French Press Heavy',
+    method: 'French Press',
+    servings: '2 cups',
+    ingredients: [
+      '30g coarse-ground coffee',
+      '480g water at 95°C',
+    ],
+    steps: [
+      'Add coffee, then water. Stir to wet all grounds.',
+      'Wait 4 minutes — no plunging yet.',
+      'Skim the floating crust with a spoon.',
+      'Press slowly. Wait 1 more minute before pouring.',
+    ],
+  },
+  {
+    title: 'Aeropress Concentrate',
+    method: 'Aeropress',
+    servings: '1 strong cup',
+    ingredients: [
+      '17g fine-medium coffee',
+      '220g water at 90°C',
+    ],
+    steps: [
+      'Insert filter, rinse, add coffee.',
+      'Pour 220g water, stir once.',
+      'Wait 1:30. Insert plunger, press for 30s.',
+      'Dilute 1:1 with hot water for americano strength.',
+    ],
+  },
+  {
+    title: 'Slow Cold Brew',
+    method: 'Cold Brew',
+    servings: '4 cups',
+    ingredients: [
+      '100g coarse-ground coffee',
+      '700g room-temp filtered water',
+    ],
+    steps: [
+      'Combine in jar, stir gently.',
+      'Steep 14–18 hours at room temp or fridge.',
+      'Strain through paper filter.',
+      'Dilute concentrate 1:1 with water or milk.',
+    ],
+  },
 ]
 
 export default function Recipes() {
   return (
-    <section id="recipes" className="py-32 border-t border-white/5 bg-gradient-to-b from-ink to-ink via-white/[0.01]">
+    <section id="recipes" className="py-32 border-t border-white/5 bg-gradient-to-b from-ink via-white/[0.01] to-ink">
       <div className="max-w-6xl mx-auto px-6">
         <div className="max-w-2xl mb-16">
           <p className="text-amber-400 uppercase tracking-[0.3em] text-xs font-semibold mb-4">
@@ -63,7 +108,7 @@ export default function Recipes() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {recipes.map((r) => (
             <article
               key={r.title}

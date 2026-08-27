@@ -8,6 +8,7 @@ export default function Navbar() {
         <ul className="hidden md:flex items-center gap-8 text-sm font-medium text-cream/80">
           <li><a href="#methods" className="hover:text-amber-400 transition">Methods</a></li>
           <li><a href="#recipes" className="hover:text-amber-400 transition">Recipes</a></li>
+          <li><a href="#tips" className="hover:text-amber-400 transition">Tips</a></li>
           <li><a href="#about" className="hover:text-amber-400 transition">About</a></li>
         </ul>
         <a
